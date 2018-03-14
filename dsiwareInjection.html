@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>3DS Seedminer Guide</title>
+  <link rel="shortcut icon" href="public/images/favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="public/images/favicon.ico" type="image/x-icon" />
+  <script src="public/js/jquery.min.js"></script>
+  <script src="public/js/bootstrap.bundle.min.js"></script>
+  <link href="public/stylesheets/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="public/stylesheets/style.css" rel="stylesheet" type="text/css">
+  <meta name="description" content="A complete guide for Seedminer, aka Single System DSiWare.">
+  <meta property="og:image" content="https://i.imgur.com/CVSu1zc.png">
+</head>
+
+<body>
+  <div class="container-content container-fluid">
+    <div class="row">
+      <div class="col-lg-3"></div>
+      <div class="col-lg-6">
+        <h1 class="mt-5 text-center h1-page-title">3DS Guide for Seedminer</h1>
+      </div>
+      <div class="col-lg-3"></div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <br/>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-3"></div>
+      <div class="col-lg-6">
+        <h2>Getting your Game patched</h2>
+        <hr>
+        <h2 id="section1">Section I - Using the DIS</h2>
+        <p>If the website is down for whatever reason, you are still be able to continue by using
+          <a class="a-table" target="_blank" href="https://github.com/zoogie/TADpole/releases/latest">TADPole</a> to patch the game yourself. After that you can continue with Section Three below.</p>
+        <ol>
+          <li>Open
+            <a class="a-table" target="_blank" href="https://jenkins.nelthorya.net/job/DSIHaxInjector/build">this website</a>
+          </li>
+          <li>Enter your name in the Username field -
+            <strong>any username will work</strong>, but don't make it too short or include spaces</li>
+          <li>Select the region you purchased your DSiWare Game in</li>
+          <li>Upload the game
+            <code>XXXXXXXX.bin</code> you previously saved to your Desktop in the
+            <code>DsiBin</code> field</li>
+          <li>Upload your
+            <code>movable.sed</code> in the
+            <code>MovableSed</code> field</li>
+          <li>Click Build and wait a few seconds</li>
+          <li>Refresh the page every minute to check if a new build is available under Build history on the left and download
+            the file</li>
+          <ul>
+            <li>Make sure this build has your name on it. If not, this is not your build</li>
+          </ul>
+          <li>Rename it by removing the
+            <code>.patched_yourname</code> part, so it ends in .bin - for example
+            <code>XXXXXXXX.bin</code>
+          </li>
+        </ol>
+        <hr>
+        <h2 id="section2">Section II - Re-Import the Game</h2>
+        <ol>
+          <li>Power off your 3DS and insert your SD Card into your PC</li>
+          <li>Navigate to
+            <code>Nintendo 3DS</code> >
+            <code>Your ID0</code> > 32 character folder >
+            <code>Nintendo DSiWare</code>
+          </li>
+          <li>Copy the patched <code>XXXXXXXX.bin</code> file you downloaded and renamed into this folder,
+            <strong>overwriting</strong> the file that is already there.</li>
+          <li>Reinsert the SD Card into your 3DS and power it on</li>
+          <li>Open System Settings, navigate to Data Management > DSiWare</li>
+          <li>Tap SD Card, tap your game and tap copy. Overwrite the existing copy</li>
+          <li>Exit System Settings and start your game</li>
+          <ul>
+            <li>You should be greeted by a white screen complaining that it could not load a file.
+              <strong>this is the intended result</strong>
+            </li>
+            <li>
+              <strong>NOTE:</strong> You may need to load further into the game so it loads the modified save file</li>
+          </ul>
+          <div class="alert alert-danger">
+            If the game boots up normally, you have done something wrong. Redo the process from
+            <strong>
+              <a class="box-a" href="#section1">Section I</a>
+            </strong> above
+          </div>
+        </ol>
+        <hr>
+        <h2 id="section3">Section III - Preparing your SD Card</h2>
+        <ol>
+          <li>Download the
+            <a class="a-table" target="_blank" href="https://github.com/AuroraWright/Luma3DS/releases/latest"> latest Version of Luma3DS</a>
+          </li>
+          <li>Download the
+            <a class="a-table" target="_blank" href="https://github.com/Plailect/b9sTool/releases/latest">latest Version of b9sTool</a>
+          </li>
+          <li>Download the
+            <a class="a-table" target="_blank" href="https://github.com/SciresM/boot9strap/releases/latest">latest Version of Boot9strap</a>
+            <strong>(NOT the devkit, NOT the ntr version)</strong>
+          </li>
+          <li>Download the
+            <a class="a-table" target="_blank" href="https://github.com/fincs/new-hbmenu/releases/latest"> latest Version of the Homebrew Menu</a>
+          </li>
+          <li>Download the .firm files corresponding to your system, so either OLD or NEW 2/3DS.
+            <br/>You will need a torrent client like deluge or qbittorent to download the file.
+            <br/>These files work on firmware version 11.4 / 11.5 / 11.6!</li>
+          <ul>
+            <li>
+              <a class="a-table" href="magnet:?xt=urn:btih:0dd89d42ad711f770da899af05ee162ede0d0070&dn=2.54-0_11.4_OLD.firm&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fzer0day.ch%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexplodie.org%3A6969%2Fannounce&tr=http%3A%2F%2Fexplodie.org%3A6969%2Fannounce&tr=udp%3A%2F%2F9.rarbg.com%3A2710%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337%2Fannounce&tr=http%3A%2F%2Fp4p.arenabg.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.aletorrenty.pl%3A2710%2Fannounce&tr=http%3A%2F%2Ftracker.aletorrenty.pl%3A2710%2Fannounce&tr=http%3A%2F%2Ftracker1.wasabii.com.tw%3A6969%2Fannounce&tr=http%3A%2F%2Ftracker.baravik.org%3A6970%2Fannounce&tr=http%3A%2F%2Ftracker.tfile.me%2Fannounce&tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&tr=http%3A%2F%2Ftorrent.gresille.org%2Fannounce&tr=udp%3A%2F%2Ftracker.yoshi210.com%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.tiny-vps.com%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.filetracker.pl%3A8089%2Fannounce">2.54-0_11.4_OLD.firm</a>
+            </li>
+            <li>
+              <a class="a-table" href="magnet:?xt=urn:btih:3b59dd43eec3edb133555f58d1180bfb196acbb4&dn=2.54-0_11.4_NEW.firm&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fzer0day.ch%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexplodie.org%3A6969%2Fannounce&tr=http%3A%2F%2Fexplodie.org%3A6969%2Fannounce&tr=udp%3A%2F%2F9.rarbg.com%3A2710%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337%2Fannounce&tr=http%3A%2F%2Fp4p.arenabg.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.aletorrenty.pl%3A2710%2Fannounce&tr=http%3A%2F%2Ftracker.aletorrenty.pl%3A2710%2Fannounce&tr=http%3A%2F%2Ftracker1.wasabii.com.tw%3A6969%2Fannounce&tr=http%3A%2F%2Ftracker.baravik.org%3A6970%2Fannounce&tr=http%3A%2F%2Ftracker.tfile.me%2Fannounce&tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&tr=http%3A%2F%2Ftorrent.gresille.org%2Fannounce&tr=udp%3A%2F%2Ftracker.yoshi210.com%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.tiny-vps.com%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.filetracker.pl%3A8089%2Fannounce">2.54-0_11.4_NEW.firm</a>
+            </li>
+          </ul>
+          <li>Copy the
+            <code>boot.firm</code> from the Luma3DS 7z archive to the root of your SD Card</li>
+          <li>Copy the
+            <code>boot.3dsx</code> (Homebrew Menu) to the root of your SD Card</li>
+          <li>Copy the
+            <code>boot.nds</code> from the b9sTool archive to the root of your SD Card</li>
+          <li>Copy the
+            <code>boot9strap.firm</code> from the
+            <code>boot9strap.zip</code> file to the
+            <code>/boot9strap/</code> folder on your SD Card. (Create it if it does not exist)</li>
+          <li>Copy the
+            <code>2.54-0_11.4_OLD.firm</code> or
+            <code>2.54-0_11.4_NEW.firm</code> into the
+            <code>/boot9strap/</code> folder on your SD Card</li>
+        </ol>
+        <hr>
+        <h2 id="section4">Section IV - Installing boot9strap and configuring Luma3DS</h2>
+        <ol>
+          <li>Launch b9sTool by starting your DSiWare game</li>
+          <ul>
+            <li>You may need to load further into the game so it loads the modified save file</li>
+          </ul>
+          <li>Select "Dump F0F1" to backup the 3DS FIRM</li>
+          <li>Select "Install boot9strap" and confirm</li>
+          <li>Wait for it to say "done!". Exit b9sTool and power off your 3DS</li>
+          <ul>
+            <li>You may need to force power off by holding the power button</li>
+          </ul>
+          <li>Boot up your 3DS to launch the Luma3DS configuration menu</li>
+          <ul>
+            <li>If your 3DS boots normally to the HOME Menu then boot9strap has not installed successfully
+              <br> Replace your prep files with freshly downloaded files and restore the F0F1 backup in b9sTool before attempting
+              to install boot9strap again</li>
+          </ul>
+          <li>Use the (A) button and the D-pad to turn on "Show Nand or user string in System Settings"</li>
+          <li>Press (Start) to save and reboot</li>
+        </ol>
+        <hr>
+        <p class="p-box">
+          You can now continue with the
+          <a href="https://3ds.hacks.guide/finalizing-setup">Finalizing Setup</a>
+        </p>
+      </div>
+      <div class="col-lg-2">
+        <div class="content-table">
+          <p class="text-center content-table-title">Content Table</p>
+          <hr class="content-table-hr">
+          <a href="index.html" class="a-table">1. Preparations</a>
+          <hr class="content-table-hr">
+          <a href="seedminerSelf.html" class="a-table">2. Seedminer</a>
+          <hr class="content-table-hr">
+          <a href="dsiwareInjection.html" class="a-table">3. Game Patching</a>
+          <hr class="content-table-hr">
+          <a href="#section1" class="a-table a-table-section">Section I - Using the DIS</a>
+          <hr class="content-table-hr">
+          <a href="#section2" class="a-table a-table-section">Section II - Re-Import the Game</a>
+          <hr class="content-table-hr">
+          <a href="#section3" class="a-table a-table-section">Section III - Preparing your SD Card</a>
+          <hr class="content-table-hr">
+          <a href="#section4" class="a-table a-table-section">Section IV - Installing boot9strap and configuring Luma3DS</a>
+        </div>
+      </div>
+      <div class="col-lg-1"></div>
+    </div>
+  </div>
+</body>
+
+</html>

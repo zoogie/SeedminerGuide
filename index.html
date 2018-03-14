@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>3DS Seedminer Guide</title>
+  <link rel="shortcut icon" href="public/images/favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="public/images/favicon.ico" type="image/x-icon" />
+  <script src="public/js/jquery.min.js"></script>
+  <script src="public/js/bootstrap.bundle.min.js"></script>
+  <link href="public/stylesheets/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="public/stylesheets/style.css" rel="stylesheet" type="text/css">
+  <meta name="description" content="A complete guide for Seedminer, aka Single System DSiWare.">
+  <meta property="og:image" content="https://i.imgur.com/CVSu1zc.png">
+</head>
+
+<body>
+  <div class="container-content container-fluid">
+    <div class="row">
+      <div class="col-lg-3"></div>
+      <div class="col-lg-6">
+        <h1 class="mt-5 text-center h1-page-title">3DS Guide for Seedminer</h1>
+        <br/>
+        <h2>General Information</h2>
+        <p>This guide will install Luma3DS with the help of Zoogie's Seedminer tool and a cheap DSiWare game. If you want a
+          more technical explanation on how this actually works, then click
+          <a class="a-table" target="_blank" href="https://zoogie.github.io/web/34⅕c3/">here</a>.
+          <br/>If you find any issues pertaining the guide, please report it
+          <a target="_blank" href="https://github.com/Jisagi/SeedminerGuide/issues/new">here</a>.
+        </p>
+      </div>
+      <div class="col-lg-3"></div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-12"></div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-3"></div>
+      <div class="col-lg-6">
+        <h2>Preparations</h2>
+        <hr>
+        <h2 id="section1">Section I - DSiWare Game</h2>
+        <ol>
+          <li>Check
+            <a class="a-table" target="_blank" href="https://3ds.hacks.guide/installing-boot9strap-(dsiware-game-injection-list)">this website</a> if you already have any of the listed Games. If you do, great, continue on with
+            <a class="a-table" href="#section2">Section II</a>
+            <br/>Additionally, it also works with any of the following games:
+            <ul>
+              <li>"Fieldrunners"</li>
+              <li>"Legends of Exidia"</li>
+              <li>"Guitar Rock Tour"</li>
+              <li>"The Legend of Zelda: Four Swords"</li>
+            </ul>
+          </li>
+          <li>Press L+R in the HOME Menu to activate camera</li>
+          <li>Press the QR Code button on the bottom screen</li>
+          <li>Scan any QR Code from the website linked above, making sure it is a game form your region</li>
+          <li>Launch the eShop from the prompt (update your 3DS if necessary), buy the game and download it</li>
+        </ol>
+        <hr>
+        <h2 id="section2">Section II - Dumping Your Game</h2>
+        <ol>
+          <li>Power on your 3DS</li>
+          <li>Open System Settings, navigate to Data Management > DSiWare</li>
+          <li>Under System Memory, tap your game and tap copy</li>
+          <li>Exit out of System Settings and power off your 3DS</li>
+        </ol>
+        <hr>
+        <h2 id="section3">Section III - Getting your ID0 and the dsiware.bin</h2>
+        <ol>
+          <li>Power off your 3DS</li>
+          <li>Insert your SD Card into your PC and open the
+            <code>Nintendo 3DS</code> folder</li>
+          <li>You will now find one or multiple folders with 32-character-long names</li>
+          <li>If you only have one, that's good! Continue with step 5</li>
+          <ul>
+            <li>Navigate one folder up so you can see the
+              <code>Nintendo 3DS</code> folder again</li>
+            <li>Rename your
+              <code>Nintendo 3DS</code> folder to
+              <code>Nintendo BACKUP</code> by right-clicking it and selecting rename</li>
+            <li>Put the SD Card back into your 3DS and power it on</li>
+            <li>
+              <strong>Wait</strong> for it to generate its data on your SD Card</li>
+            <li>Power off your 3DS and insert the SD Card back into your PC</li>
+            <li>Open the
+              <code>Nintendo 3DS</code> folder</li>
+          </ul>
+          <li>You should now see one folder with a 32-character-long name. The name of this folder is your ID0 - remember/copy
+            it
+          </li>
+          <ul>
+            <li>If you did
+              <strong>NOT</strong> skip step 4, delete the
+              <code>Nintendo 3DS</code> folder and rename the
+              <code>Nintendo BACKUP</code> folder back to
+              <code>Nintendo 3DS</code>
+            </li>
+          </ul>
+          <li>Navigate into
+            <code>Your ID0</code> > 32-character-long name >
+            <code>Nintendo DSiWare</code>
+          </li>
+          <li>You will find one or more
+            <code>XXXXXXXX.bin</code> files. If you have multiple ones, go back to the website from Section I and find the ID of the game you bought
+          </li>
+          <li>Copy the .bin file somewhere you can remember. For example, your desktop</li>
+        </ol>
+        <hr>
+        <p class="p-box">I do have a friend with access to the homebrew launcher and a somewhat good graphics card.
+          <a href="seedminerSelf.html">Continue here</a>
+        </p>
+        <p class="p-box">I do not have a friend with access to the homebrew launcher, but would like someone to help me.
+          <a href="seedminerOther.html">Continue here</a>
+        </p>
+      </div>
+      <div class="col-lg-2">
+        <div class="content-table">
+          <p class="text-center content-table-title">Content Table</p>
+          <hr class="content-table-hr">
+          <a href="index.html" class="a-table">1. Preparations</a>
+          <hr class="content-table-hr">
+          <a href="#section1" class="a-table a-table-section">Section I - DSiWare Game</a>
+          <hr class="content-table-hr">
+          <a href="#section2" class="a-table a-table-section">Section II - Dumping Your Game</a>
+          <hr class="content-table-hr">
+          <a href="#section3" class="a-table a-table-section">Section III - Getting your ID0 and the dsiware.bin</a>
+          <hr class="content-table-hr">
+          <a href="seedminerSelf.html" class="a-table">2. Seedminer</a>
+          <hr class="content-table-hr">
+          <a href="dsiwareInjection.html" class="a-table">3. Game Patching</a>
+        </div>
+      </div>
+      <div class="col-lg-1"></div>
+    </div>
+  </div>
+</body>
+
+</html>
