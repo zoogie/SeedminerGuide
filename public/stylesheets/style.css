@@ -27,10 +27,6 @@ li {
   border: 1px solid azure;
 }
 
-.to_change {
-  color: red;
-}
-
 hr {
   border-top: 1px solid azure;
 }
@@ -100,7 +96,7 @@ code {
   text-decoration: underline;
 }
 
-.p-box:hover > a {
+.p-box > a:hover {
   color: #7694b8;
   text-decoration: initial;
 }
