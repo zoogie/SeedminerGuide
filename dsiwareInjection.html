@@ -31,29 +31,28 @@
         <h2>Getting your Game patched</h2>
         <hr>
         <h2 id="section1">Section I - Using the DIS</h2>
-        <p>If the website is down for whatever reason, you can use
-          <a class="a-table" target="_blank" href="http://injector.jisagi.net/">this one</a> instead</p>
         <ol>
           <li>Open
-            <a class="a-table" target="_blank" href="https://jenkins.nelthorya.net/job/DSIHaxInjector/build">this website</a>
+            <a class="a-table" target="_blank" href="https://jisagi.github.io/TADpole-Online/">this website</a> (if it should be offline or not working, you can use
+            <a class="a-table" target="_blank" href="https://jenkins.nelthorya.net/job/DSIHaxInjector/build">this one</a> instead)
           </li>
-          <li>Enter your name in the Username field -
-            <strong>any username will work</strong>, but don't make it too short or include spaces</li>
-          <li>Select the region you purchased your DSiWare Game in</li>
+          <li>Download the
+            <code>ctcert.bin</code> and the injection archive
+            <code>USA/EUR/JPN.zip</code>
+          </li>
           <li>Upload the game
             <code>XXXXXXXX.bin</code> you previously saved to your Desktop in the
-            <code>DsiBin</code> field</li>
+            <code>DSiWare.bin</code> field</li>
           <li>Upload your
-            <code>movable.sed</code> in the
-            <code>MovableSed</code> field</li>
-          <li>Click Build and wait a few seconds</li>
-          <li>Refresh the page every minute to check if a new build is available under Build history on the left and download
-            the file</li>
-          <ul>
-            <li>Make sure this build has your name on it. If not, this is not your build</li>
-          </ul>
+            <code>movable.sed</code> and the
+            <code>ctcert.bin</code> in their corresponding fields</li>
+          <li>Unzip the downloaded injection archive and upload the
+            <code>game_XXX.app</code> and the
+            <code>public_XXX.sav</code> in their corresponding fields</li>
+          <li>Click Start! and wait a few seconds</li>
+          <li>The website will automatically offer the patched game as download</li>
           <li>Rename it by removing the
-            <code>.patched_yourname</code> part, so it ends in .bin - for example
+            <code>.patched</code> part, so it ends in .bin - for example
             <code>XXXXXXXX.bin</code>
           </li>
         </ol>
@@ -77,8 +76,9 @@
           </ul>
           <li>Exit System Settings and start your game</li>
           <ul>
-            <li>You should be greeted by a white screen complaining that it could not load a file (or solid light-green screens, top and bottom, with no text at all). 
-              <strong>this is the intended result</strong>
+            <li>You should be greeted by a white screen complaining that it could not load a file (or solid light-green screens,
+              top and bottom, with no text at all).
+              <strong>This is the intended result</strong>
             </li>
             <li>
               <strong>NOTE:</strong> You may need to load further into the game so it loads the modified save file</li>
