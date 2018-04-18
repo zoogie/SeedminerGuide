@@ -5,12 +5,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>3DS Seedminer Guide</title>
-  <link rel="shortcut icon" href="public/images/favicon.ico" type="image/x-icon" />
-  <link rel="icon" href="public/images/favicon.ico" type="image/x-icon" />
-  <script src="public/js/jquery.min.js"></script>
-  <script src="public/js/bootstrap.bundle.min.js"></script>
-  <link href="public/stylesheets/bootstrap.min.css" rel="stylesheet" type="text/css">
-  <link href="public/stylesheets/style.css" rel="stylesheet" type="text/css">
+  <link rel="shortcut icon" href="../public/images/favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="../public/images/favicon.ico" type="image/x-icon" />
+  <script src="../public/js/jquery.min.js"></script>
+  <script src="../public/js/bootstrap.bundle.min.js"></script>
+  <link href="../public/stylesheets/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="../public/stylesheets/style.css" rel="stylesheet" type="text/css">
   <meta name="description" content="A complete guide for Seedminer, aka Single System DSiWare.">
   <meta property="og:image" content="https://i.imgur.com/CVSu1zc.png">
 </head>
@@ -128,8 +128,8 @@
           <li>Create a folder called
             <code>boot9strap</code> on the root of your SD Card</li>
           <li>Copy
-            <code>boot9strap.firm</code> from the
-            boot9strap <code>.zip</code> to the
+            <code>boot9strap.firm</code> from the boot9strap
+            <code>.zip</code> to the
             <code>/boot9strap/</code> folder on your SD Card</li>
           <li>Copy
             <code>2.54-0_11.4_OLD.firm</code> or
@@ -149,14 +149,15 @@
           <ul>
             <li>You may need to force power off by holding the power button</li>
           </ul>
-          <li>Boot up your 3DS to launch the Luma3DS configuration menu</li>
-          <ul>
-            <li>If your 3DS boots normally to the HOME Menu then boot9strap has not installed successfully
-              <br> Replace your prep files with freshly downloaded files and restore the F0F1 backup in b9sTool before attempting
-              to install boot9strap again</li>
-          </ul>
-          <li>Use the (A) button and the D-pad to turn on "Show Nand or user string in System Settings"</li>
-          <li>Press (Start) to save and reboot</li>
+          <li>Boot up your 3DS while holding (Select) to launch the Luma3DS configuration menu
+            <ul>
+              <li>If your 3DS boots normally to the HOME Menu then boot9strap did not install correctly. Replace your prep files
+                with freshly downloaded files and restore the F0F1 backup in b9sTool.
+                <strong>Do not create a new F0F1 backup!</strong> Then try reinstalling boot9strap again
+              </li>
+            </ul>
+            <li>Use the (A) button and the D-pad to turn on "Show Nand or user string in System Settings"</li>
+            <li>Press (Start) to save and reboot</li>
         </ol>
         <hr>
         <p class="p-box">
@@ -168,11 +169,14 @@
         <div class="content-table">
           <p class="text-center content-table-title">Content Table</p>
           <hr class="content-table-hr">
-          <a href="/SeedminerGuide" class="a-table">1. Preparations</a>
+          <a href="../" class="a-table">1. Preparations</a>
           <hr class="content-table-hr">
-          <a href="seedminerSelf.html" class="a-table">2. Seedminer</a>
+          <p>2. Seedminer
+            <a href="../seedminerAuto/" class="a-table">automated</a> or
+            <a href="../seedminerSelf/" class="a-table">with a friend</a>
+          </p>
           <hr class="content-table-hr">
-          <a href="dsiwareInjection.html" class="a-table">3. Game Patching</a>
+          <a href="./" class="a-table">3. Game Patching</a>
           <hr class="content-table-hr">
           <a href="#section1" class="a-table a-table-section">Section I - Using the DIS</a>
           <hr class="content-table-hr">
@@ -181,6 +185,7 @@
           <a href="#section3" class="a-table a-table-section">Section III - Preparing your SD Card</a>
           <hr class="content-table-hr">
           <a href="#section4" class="a-table a-table-section">Section IV - Installing boot9strap and configuring Luma3DS</a>
+          <br>
         </div>
       </div>
       <div class="col-lg-1"></div>
