@@ -124,9 +124,21 @@
           </ul>
           <li>Boot up your 3DS while holding (Select) to launch the Luma3DS configuration menu
             <ul>
-              <li>If your 3DS boots normally to the HOME Menu then boot9strap did not install correctly. Replace your prep files
-                with freshly downloaded files and click "Restore Stock" in b9sTool to restore your backup.
-                <strong>Do not create a new F0F1 backup!</strong> Then try reinstalling boot9strap again
+              <li>If your 3DS boots normally to the HOME Menu then boot9strap did not install correctly. Boot b9sTool and make
+                sure the FIRM STATUS says "STOCK". If it says FIRM STATUS: B9S, then select "Restore stock firmware". Then
+                rename
+                <code>boot9strap/key.bin</code> to
+                <code>danger_reset_backup</code> (no file extension). Run b9sTool again, choose "Install boot9strap", and hopefully you will see luma3ds
+                config on next reboot.
+              </li>
+              <li>
+                If the above fails and you have an old 3ds/2ds (i.e. NOT New 3ds/2ds), you may try to fix your firms with the 3ds's built-in
+                recovery mode by doing
+                <a class="a-table" target="_blank" href="https://www.3dbrew.org/wiki/Recovery_Mode">
+                  this guide</a>.
+                <br>Then actually select update. The system should say "up to date" and then turn off. Rename
+                <code>boot9strap/key.bin</code> to
+                <code>danger_reset_backup</code> (no file extension). Run b9sTool again, choose "Install boot9strap".
               </li>
             </ul>
             <li>Use the (A) button and the D-pad to turn on "Show Nand or user string in System Settings"</li>
